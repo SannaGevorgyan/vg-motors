@@ -7,7 +7,7 @@ import translations from "@/app/commons/translations";
 import Image from "next/image";
 
 export default function Home() {
-  const position = [40.1594599, 44.3261934];
+  // const position = [40.1594599, 44.3261934];
 
   const [lang, setLang] = useState('en');
 
@@ -40,11 +40,15 @@ export default function Home() {
           <p
             className={`cursor-pointer px-2 py-1 rounded-md ${lang === 'en' ? "bg-gray-100" : ""}`}
             onClick={() => setLang('en')}
-          >Eng</p>
+          >
+            Eng
+          </p>
           <p
             className={`cursor-pointer px-2 py-1 rounded-md ${lang === 'hy' ? "bg-gray-100" : ""}`}
             onClick={() => setLang('hy')}
-          >Հայ</p>
+          >
+            Հայ
+          </p>
         </div>
       </main>
       <Footer/>
