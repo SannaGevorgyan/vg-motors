@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="h-full flex flex-col justify-between bg-white text-gray-800">
       <Navbar/>
-      <main className="flex flex-col items-center justify-center text-center p-10 xl:px-[200px]">
+      <main className="flex flex-col items-center justify-center text-center p-10 xl:px-[200px] bg-white">
         <div>
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">VG Motors</h1>
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">{translations[lang].title}</h1>
