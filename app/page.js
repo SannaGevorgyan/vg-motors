@@ -12,13 +12,13 @@ export default function Home() {
   const [lang, setLang] = useState('en');
 
   return (
-    <div className="h-full flex flex-col justify-between bg-white">
+    <div className="h-full flex flex-col justify-between bg-white text-gray-800">
       <Navbar/>
       <main className="flex flex-col items-center justify-center text-center p-10 xl:px-[200px]">
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-6">VG Motors</h1>
-          <h1 className="text-3xl md:text-4xl font-bold mb-6">{translations[lang].title}</h1>
-          <p className="text-lg text-gray-700 mb-8" dangerouslySetInnerHTML={{ __html: translations[lang].description }}></p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">VG Motors</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">{translations[lang].title}</h1>
+          <p className="text-lg text-gray-700 mb-8 text-gray-800" dangerouslySetInnerHTML={{ __html: translations[lang].description }}></p>
         </div>
         <div className="flex flex-col lg:flex-row gap-10 my-10">
           <Image src='/images/image-1.png' width={400} height={500} alt=""/>
