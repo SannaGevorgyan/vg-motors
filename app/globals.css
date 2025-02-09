@@ -30,3 +30,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.leaflet-control-attribution {
+  display: none !important;
+}
