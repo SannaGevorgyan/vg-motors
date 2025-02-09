@@ -31,8 +31,8 @@ export default function Home() {
             {translations[lang].address_text} {translations[lang].address}
           </p>
 
-          <p className="text-xl font-semibold mb-2">
-            📞 <a href="tel:+1234567890" className="text-gray-600">010 50-00-07</a>
+          <p className="text-xl font-semibold mb-2 text-gray-800">
+            📞 <a href="tel:010500007" className="text-gray-600">010 50-00-07</a>
           </p>
         </div>
 
