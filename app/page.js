@@ -12,7 +12,7 @@ export default function Home() {
   const [lang, setLang] = useState('en');
 
   return (
-    <div className="h-full flex flex-col justify-between">
+    <div className="h-full flex flex-col justify-between bg-white">
       <Navbar/>
       <main className="flex flex-col items-center justify-center text-center p-10 xl:px-[200px]">
         <div>
