@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import translations from "@/app/commons/translations";
 import Image from "next/image";
+import Sidebar from "@/app/components/Sidebar";
 
 export default function Home() {
   // const position = [40.1594599, 44.3261934];
@@ -12,46 +13,14 @@ export default function Home() {
   const [lang, setLang] = useState('en');
 
   return (
-    <div className="h-full flex flex-col justify-between bg-white text-gray-800">
-      <Navbar/>
-      <main className="flex flex-col items-center justify-center text-center p-10 xl:px-[200px] bg-white">
+    <div className={`text-white bg-black bg-[url('/images/8.svg')] bg-100 bg-center bg-no-repeat h-full mt-20 flex pt-10`}>
+      <div className="bg-black opacity-60 w-full h-full"></div>
+      <div className="flex w-full flex-col items-center absolute top-[150px]  md:top-[90px] inset-0 z-20">
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">VG Motors</h1>
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">{translations[lang].title}</h1>
-          <p className="text-lg text-gray-700 mb-8 text-gray-800" dangerouslySetInnerHTML={{ __html: translations[lang].description }}></p>
+          <Image src='/images/logo.png' width={360} height={100} alt="logo"/>
         </div>
-        <div className="flex flex-col lg:flex-row gap-10 my-10">
-          <Image src='/images/image-1.png' width={400} height={500} alt=""/>
-          <Image src='/images/image-2.png' width={400} height={500} alt=""/>
-        </div>
-
-        <div className="flex flex-col items-center max-w-3xl mx-auto">
-          <h1 className="text-3xl font-bold mb-4">{translations[lang].get_in_touch}</h1>
-          <p className="text-lg text-gray-700 mb-4">
-            {translations[lang].address_text} {translations[lang].address}
-          </p>
-
-          <p className="text-xl font-semibold mb-2 text-gray-800">
-            📞 <a href="tel:010500007" className="text-gray-600">010 50-00-07</a>
-          </p>
-        </div>
-
-        <div className="w-full justify-end flex items-center gap-4 mt-10">
-          <p
-            className={`cursor-pointer px-2 py-1 rounded-md ${lang === 'en' ? "bg-gray-100" : ""}`}
-            onClick={() => setLang('en')}
-          >
-            Eng
-          </p>
-          <p
-            className={`cursor-pointer px-2 py-1 rounded-md ${lang === 'hy' ? "bg-gray-100" : ""}`}
-            onClick={() => setLang('hy')}
-          >
-            Հայ
-          </p>
-        </div>
-      </main>
-      <Footer/>
+        <h1 className="md:text-2xl font-bold mt-9">{translations[lang].title.toUpperCase()}</h1>
+      </div>
     </div>
   );
 }

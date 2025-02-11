@@ -19,6 +19,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: Arial, sans-serif;
 }
 
 body > div {
