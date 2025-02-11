@@ -10,7 +10,7 @@ import Sidebar from "@/app/components/Sidebar";
 export default function Home() {
   // const position = [40.1594599, 44.3261934];
 
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('hy');
 
   return (
     <div className={`text-white bg-black bg-[url('/images/8.svg')] bg-100 bg-center bg-no-repeat h-full mt-20 flex pt-10`}>
