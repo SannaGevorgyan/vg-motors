@@ -23,9 +23,13 @@ export default function Layout({children, hasBg}) {
   return (
     <html lang="hy">
     <body className={'bg-black'}>
-    <div className={`flex`}>
+    <div className={`flex flex-col`}>
       <Sidebar/>
       <main className="flex-1">{children}</main>
+      <div className="text-white w-full">
+        <p></p>
+        <p></p>
+      </div>
     </div>
     </body>
     </html>
