@@ -61,7 +61,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-        <div className="flex items-center"><Image src="/images/image-4.png" alt={6} width={480} height={360}/></div>
+        <div className="flex items-center"><Image src="/images/contact.png" alt="contact image" width={480} height={360}/></div>
       </div>
     </div>
   );
